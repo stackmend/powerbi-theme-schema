@@ -16,17 +16,21 @@ Completed:
   the chart-specific theme and rejected the same theme with an invented property.
 - The same live retrieval and valid/invalid theme proof passed over local MCP HTTP.
 - A second live sync returned `changed: false`; the Git working tree stayed clean.
+- Published and enabled both GitHub Actions workflows after the owner granted
+  `workflow` scope. The [validation run](https://github.com/stackmend/powerbi-theme-schema/actions/runs/45160724373)
+  and [manual sync run](https://github.com/stackmend/powerbi-theme-schema/actions/runs/45160749206)
+  both passed. The sync workflow is active with Monday 09:00 UTC scheduling.
 
 Not completed:
 
-- GitHub Actions run verification (pending the first completed remote run).
 - Hosting the connector at a public HTTPS endpoint.
 - GPT migration, plugin installation, in-ChatGPT tool invocation, public plugin submission.
 - Model-driven generation/revision in a public portfolio chatbot.
 - Power BI Desktop import and rendering tests.
 
 The owner granted the required `workflow` scope on November 23, 2026. The workflows
-have been moved into `.github/workflows/` for publication and a manual first run.
+are published in `.github/workflows/`; the first manual run passed. A scheduled
+event itself has not yet occurred since activation.
 
 Reproduce the connector proof with `.venv/bin/python scripts/prove_connector.py`.
 It fails if latest discovery falls back, even if the pinned schema remains retrievable.
