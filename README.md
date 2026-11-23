@@ -70,7 +70,15 @@ from `metadata/`, and commit it. Deploy the matching checkout to connectors as w
 connectors reject a remote version lower than their bundled baseline. Re-run tests
 before re-enabling sync. Archives are never rewritten automatically.
 
-## Scope and limitations
+## Public chatbot
+
+[Try pbiThemeBot](https://pbithemebot-by-peter-buley.pbuley.chatgpt.site).
+The portfolio demo is a public website with conversational theme generation,
+schema validation, revisions, and JSON download. Its source is maintained in a
+separate Sites repository (local checkout: `chatbot/`), while this repository
+maintains the verified schema manifest it retrieves.
+
+## Validation limitations
 
 The manifest identifies the latest **verified published schema**, not necessarily
 the newest Power BI Desktop release. Validation does not guarantee that a setting

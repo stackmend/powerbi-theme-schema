@@ -6,3 +6,4 @@ references/
 .env*
 *.tmp
 /reportThemeSchema-2.159.json
+/chatbot/
