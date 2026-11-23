@@ -54,10 +54,8 @@ See [migration setup](docs/migration.md) for remaining work.
 
 ## Synchronization and rollback
 
-The workflow templates under `workflow-templates/` are ready to install into
-`.github/workflows/`. They are not scheduled until installed: the current GitHub
-login lacks the `workflow` scope required to publish them. Once installed, the sync
-checks Mondays at 09:00 UTC (18:00 Korea time) and supports manual runs.
+The workflows under `.github/workflows/` run validation on pushes and pull requests.
+The sync checks Mondays at 09:00 UTC (18:00 Korea time) and supports manual runs.
 GitHub may delay scheduled jobs. It selects numeric versions,
 pins the upstream commit before downloading, checks the Git blob, Draft 7 schema,
 local references, expected structure and example regressions before publishing.

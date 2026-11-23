@@ -19,23 +19,14 @@ Completed:
 
 Not completed:
 
-- GitHub Actions installation or scheduled/manual workflow runs. GitHub rejected
-  publishing workflow files because the active OAuth login lacks `workflow` scope.
-  The public repository retains the ready-to-install files in `workflow-templates/`.
+- GitHub Actions run verification (pending the first completed remote run).
 - Hosting the connector at a public HTTPS endpoint.
 - GPT migration, plugin installation, in-ChatGPT tool invocation, public plugin submission.
 - Model-driven generation/revision in a public portfolio chatbot.
 - Power BI Desktop import and rendering tests.
 
-To enable Actions, the owner can grant the GitHub CLI the needed scope:
-
-```sh
-gh auth refresh -h github.com -s workflow
-```
-
-After authentication, move the two templates into `.github/workflows/`, update the
-README's installation status, commit and push. Dispatch `sync.yml` manually and
-inspect the completed run before claiming the weekly schedule is operational.
+The owner granted the required `workflow` scope on November 23, 2026. The workflows
+have been moved into `.github/workflows/` for publication and a manual first run.
 
 Reproduce the connector proof with `.venv/bin/python scripts/prove_connector.py`.
 It fails if latest discovery falls back, even if the pinned schema remains retrievable.
