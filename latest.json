@@ -1,0 +1,14 @@
+{
+  "version": "2.159",
+  "filename": "reportThemeSchema-2.159.json",
+  "exploration_version": "5.78",
+  "draft": "draft-07",
+  "sha256": "c45b38456a9c14426fdbf5f6c9fff582483bae89d5c9047e38969abce1ba9722",
+  "git_blob_sha": "be72a8ac00c36f7d816d9e574ba90b2662894844",
+  "upstream_commit": "bcc573acd49faeea262c1398e80a34e72d0f4679",
+  "upstream_url": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/bcc573acd49faeea262c1398e80a34e72d0f4679/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.159.json",
+  "archive_path": "schemas/reportThemeSchema-2.159.json",
+  "readme_path": "upstream/2.159/README.md",
+  "readme_sha256": "30073347ff7971abe7ab2fb79cac3155c7abc4d5ef2826752da9bdbe25e8ee89",
+  "license_sha256": "dea9265341829002e2c23a7372393eb2ed6e26085fb623f38a4ba0af833f30a6"
+}

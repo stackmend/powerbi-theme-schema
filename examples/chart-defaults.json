@@ -1,0 +1,11 @@
+{
+  "name": "Chart Defaults",
+  "visualStyles": {
+    "clusteredColumnChart": {
+      "*": {
+        "labels": [{"show": true, "color": {"solid": {"color": "#111827"}}, "fontSize": 12}],
+        "legend": [{"show": true, "position": "BottomCenter"}]
+      }
+    }
+  }
+}

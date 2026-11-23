@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+references/
+.env*
+*.tmp
+/reportThemeSchema-2.159.json
